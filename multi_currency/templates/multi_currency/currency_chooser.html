@@ -1,0 +1,9 @@
+{% if needs_conversion %}
+    {% for currency in currencies %}
+        <li>
+            <a
+                class="{% if currency.active %}active{% endif %}"
+                href="{% url 'select_currency' currency.code %}">{{ currency.code }}</a>
+        </li>
+    {% endfor %}
+{% endif %}

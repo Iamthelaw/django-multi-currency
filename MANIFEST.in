@@ -1,0 +1,7 @@
+include README.rst
+
+resursive-include tests *
+
+resursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude example *

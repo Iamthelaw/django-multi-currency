@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load multi_currency_tags %}
+
+{% block content %}
+    <article>
+        <h1>Multi Currency app demo</h1>
+        <nav>
+            {% currency_chooser %}
+        </nav>
+        <ul>
+            <li>Language code: {{ request.LANGUAGE_CODE }}</li>
+            <li>Current currency: {{ currency_code }}</li>
+            <li>Current rate: {{ currency_rate }}</li>
+        </ul>
+        <p>Example price: {% local_currency '100' %}</p>
+    </article>
+{% endblock %}
