@@ -1,3 +1,5 @@
+Full Documentation: http://django-multi-currency.readthedocs.io/en/latest/
+
 Quickstart
 ==========
 
